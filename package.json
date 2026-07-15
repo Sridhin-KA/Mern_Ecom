@@ -1,0 +1,19 @@
+{
+  "name": "97",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "backend":"npm start --prefix backend",
+    "frontend":"npm run dev --prefix frontend/Ecom97",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
