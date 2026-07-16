@@ -24,7 +24,8 @@ app.use('/api/products',productRoutes)
 app.use('/api/cart/',cartRoutes)
 app.use('/api/order/',orderRoutes)
 
-app.listen(5000,()=>{
-    console.log('Server Started');
-    
-})
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+    console.log(`Server Started on ${PORT}`);
+});
